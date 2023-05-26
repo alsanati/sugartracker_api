@@ -25,10 +25,6 @@ async function getPatient(supabaseClient: SupabaseClient<any,"public",any>, id: 
 
   if (error) throw error;
 
-
-
-
-
   // Map the data to a FHIR-compliant format
   const patientData = data[0];
   const fhirData = {
