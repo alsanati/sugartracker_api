@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "supabase": "^1.61.5"
+  },
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^14.11.0"
+  }
+}
