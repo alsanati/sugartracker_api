@@ -10,32 +10,30 @@ To set up the project and run the Supabase function, follow these steps:
 
 2. Create a new directory for your project and navigate to it in your terminal.
 
-3. Create a new Deno script file, e.g., `server.ts`, and copy the code for the Supabase function into it.
-
-4. Install the required dependencies by adding the following import statements at the beginning of your script:
+3. Install the required dependencies by adding the following import statements at the beginning of your script:
 
    ```typescript
    import { serve } from 'https://deno.land/std@0.177.0/http/server.ts';
    import { createClient, SupabaseClient } from 'https://esm.sh/@supabase/supabase-js@2.22.0';
    ```
 
-5. Optionally, you can add Deno lint ignore comment at the beginning of your script to suppress any linting errors:
+4. Optionally, you can add Deno lint ignore comment at the beginning of your script to suppress any linting errors:
 
    ```typescript
    // deno-lint-ignore-file
    ```
 
-6. Set up environment variables for your Supabase connection by assigning your Supabase URL and anonymous key to the `SUPABASE_URL` and `SUPABASE_ANON_KEY` environment variables, respectively.
+5. Set up environment variables for your Supabase connection by assigning your Supabase URL and anonymous key to the `SUPABASE_URL` and `SUPABASE_ANON_KEY` environment variables, respectively.
 
-7. Run the Deno server by executing the following command in your terminal:
+6. Run the Deno server by executing the following command in your terminal:
 
    ```bash
-   deno run --allow-env --allow-net server.ts
+   deno run --allow-env --allow-net index.ts
    ```
 
    The `--allow-env` flag allows access to environment variables, and the `--allow-net` flag grants network access for serving HTTP requests.
 
-8. Your Supabase function is now running, and you can start making requests to retrieve patient and glucose data.
+7. Your Supabase function is now running, and you can start making requests to retrieve patient and glucose data.
 
 ## Dependencies
 
