@@ -79,9 +79,9 @@ async function getGlucoseData(supabaseClient: SupabaseClient, id: string) {
           }
         ],
         subject: {
-          reference: `Patient/${checkValue(item.patient_id, true)}`  // adjust as per your data structure
+          reference: `Patient/${checkValue(item.patient_id, true)}`  
         },
-        issued: checkValue(item.created_at),  // adjust as per your data structure
+        issued: checkValue(item.created_at),  
         code: {
           coding: [
             {
@@ -92,7 +92,7 @@ async function getGlucoseData(supabaseClient: SupabaseClient, id: string) {
           ]
         },
         valueQuantity: {
-          value: checkValue(item.sugar_level, true),  // adjust as per your data structure
+          value: checkValue(item.sugar_level, true),  
           unit: checkValue("min"),
           system: "http://unitsofmeasure.org",
           code: checkValue("min")
