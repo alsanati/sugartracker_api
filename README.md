@@ -25,6 +25,8 @@ To set up the project and run the Supabase function, follow these steps:
 
 5. Set up environment variables for your Supabase connection by assigning your Supabase URL and anonymous key to the `SUPABASE_URL` and `SUPABASE_ANON_KEY` environment variables, respectively.
 
+6. Move to folder /api/supabase/functions/get-patient
+
 6. Run the Deno server by executing the following command in your terminal:
 
    ```bash
